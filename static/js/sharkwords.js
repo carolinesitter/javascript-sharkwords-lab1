@@ -24,6 +24,7 @@ const createDivsForChars = (word) => {
   //create a for loop that loops over each char in word
   //for each letter generate a div
   //append div to word container
+  
   for (let char of word) {
     document.querySelector('#word-container').insertAdjacentHTML('beforeend', `<div class="letter-box ${char}">`);
   
@@ -33,8 +34,16 @@ const createDivsForChars = (word) => {
 // Loop over each letter in the alphabet and generate a button for each letter
 // The buttons should be appended to the section with id="letter-buttons"
 const generateLetterButtons = () => {
-  // Replace this with your code
+  
+  // loop over each char in alphabet and create button
+  // append each button to the section id="letter-buttons"
+  
+  for (let char of ALPHABET) {
+    document.querySelector('#letter-buttons').insertAdjacentHTML('beforeend', `<button> ${char} </button>`);
+  }
+  
 };
+
 
 // Set the `disabled` property of `buttonEl` to `true.
 //
@@ -71,3 +80,5 @@ const isLetterInWord = (letter) => {
   // in the next lab, you will be adding functionality to handle when
   // someone clicks on a letter
 })();
+
+// startGame();
