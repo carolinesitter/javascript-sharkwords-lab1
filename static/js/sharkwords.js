@@ -64,7 +64,12 @@ const disableLetterButton = (buttonEl) => {
 // For now, you should test it out to make sure it works
 
 const isLetterInWord = (letter) => {
-  // Replace this with your code
+  
+  // take in a string 'letter' and returns true if letter is in word
+  // check if div has letter class we are checking
+  
+  document.querySelector(`div.${letter}`) !== null;
+
 };
 
 // This is like if __name__ == '__main__' in Python
@@ -77,11 +82,9 @@ const isLetterInWord = (letter) => {
   // and can tell if things look correct for this word
   const word = 'hello';
 
-  // call the function that makes an empty line for each letter in the word
-  // Replace this line with the function call
+  createDivsForChars(word);
 
-  // call the function that makes a button for each letter in the alphabet
-  // Replace this line with the function call
+  generateLetterButtons();
 
   // in the next lab, you will be adding functionality to handle when
   // someone clicks on a letter
