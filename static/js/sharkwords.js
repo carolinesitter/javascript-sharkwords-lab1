@@ -50,7 +50,13 @@ const generateLetterButtons = () => {
 // `buttonEl` is an `HTMLElement` object.
 //
 const disableLetterButton = (buttonEl) => {
-  // Replace this with your code
+  
+  // create a function to disable a button after a user clicks on it 
+  // buttonEl is an HTML element user clicks on
+  // use "disabled" attribute and set to true
+
+  buttonEl.disabled = true;
+
 };
 
 // This is a helper function we will use in the future
