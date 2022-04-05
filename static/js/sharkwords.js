@@ -20,7 +20,14 @@ const numWrong = 0;
 // Loop over the chars in `word` and create divs.
 // The divs should be appended to the section with id="word-container".
 const createDivsForChars = (word) => {
-  // Replace this with your code
+
+  //create a for loop that loops over each char in word
+  //for each letter generate a div
+  //append div to word container
+  for (let char of word) {
+    document.querySelector('#word-container').insertAdjacentHTML('beforeend', `<div class="letter-box ${char}">`);
+  
+  };
 };
 
 // Loop over each letter in the alphabet and generate a button for each letter
